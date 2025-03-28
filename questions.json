@@ -1,0 +1,705 @@
+{
+  "questions": [
+  {
+    "id" : 0,
+    "question" : "O que o comando \"ls\" faz?",
+    "image" : null,
+    "categories": "",
+    "level": null,
+    "options" :  [
+      {
+        "text": "Lista arquivos e diretórios.",
+        "correct": true
+      },
+      {
+        "text": "Lista os itens de uma lista."
+      },
+      {
+        "text": "Lista os usuários da maquina."
+      },
+      {
+        "text": "Lista os possíveis caminhos da pasta atual."
+      }
+    ]
+   },
+   {
+    "id" : 1,
+    "question" : "O que o comando \"mkdir\" faz?",
+    "image" : null,
+    "level": null,
+    "categories": "",
+    "options" :  [
+      {
+        "text": "Cria diretórios.",
+        "correct": true
+      },
+      {
+        "text": "Define permissões de acesso a diretórios."
+      },
+      {
+        "text": "Exclui diretórios e seus conteúdos."
+      },
+      {
+        "text": "Move diretórios para outro local."
+      }
+    ]
+   },
+   {
+    "id" : 2,
+    "question" : "Qual dos comandos listados é capaz de criar duas pastas no diretório atual?",
+    "image" : null,
+    "level": null,
+    "categories": "",
+    "options" :  [
+      {
+        "text": "mkdir 1 2",
+        "correct": true
+      },
+      {
+        "text": "mkdir Pasta\\ 1\\ Pasta\\ 2",
+        "info_text": "Nesse exemplo, apenas uma unica pasta com o nome \"Pasta 1 Pasta 2\" seria criada, pois os caracteres estão sendo \"escapados\""
+      },
+      {
+        "text": "mkdir 'Pasta 1, Pasta 2'",
+        "info_text": "Nesse exemplo, apenas uma unica pasta com o nome \"Pasta 1, Pasta 2\" seria criada, pois o conteudo digitado, está ao redor de apostofros, o comando irá tratar o que for informado como um único argumento"
+      },
+      {
+        "text": "mkdir Pasta 1 Pasta 2",
+        "info_text": "Olha que interessante, nesse exemplo, foram especificados quatro argumentos, e seriam criados três pastas, primeiro a pasta nomeada de \"Pasta\" seria criada, logo depois, uma outra pasta com o nome de \"1\" seria criada, depois, o comando iria tentar criar outra pasta, com o nome de \"Pasta\", porém, a pasta já existe, pois ela foi criada anteriormente, ou seja, seria mostrado uma mensagem de aviso na tela, falando que o \"Item já existe\", e por fim, seria criado a pasta nomeada de \"2\"."
+      }
+    ]
+   },
+   {
+      "id": 3,
+      "question": "Qual comando pode ser utilizado para visualizar o caminho diretório atual?",
+      "image": null,
+      "level": null,
+      "categories": "",
+      "options": [
+        {
+          "text": "pwd",
+          "correct": true
+        },
+        {
+          "text": "cd"
+        },
+        {
+          "text": "echo"
+        },
+        {
+          "text": "ls"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Qual é a função do comando \"echo\" no Linux?",
+      "image": null,
+      "level": null,
+      "categories": "",
+      "options": [
+        {
+          "text": "Exibe algum texto.",
+          "correct": true
+        },
+        {
+          "text": "Remove arquivos."
+        },
+        {
+          "text": "Copia arquivos."
+        },
+        {
+          "text": "Altera permissões de arquivos."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "De acordo com a imagem, normalmente, qual seria o caminho completo da pasta home (~) do usuário atual?",
+      "image": "./data/q5.png",
+      "level": null,
+      "categories": "",
+      "options": [
+        {
+          "text": "/root",
+          "correct": true
+        },
+        {
+          "text": "/home/root"
+        },
+        {
+          "text": "/home/vega",
+          "info_text": "/home/vega é a pasta atual no qual o usuário root está."
+        },
+        {
+          "text": "/users/admin"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "Qual dos seguintes comandos podem ser utilizados para criar um arquivo vazio?",
+      "image": null,
+      "level": null,
+      "categories": "",
+      "options": [
+        {
+          "text": "touch arquivo",
+          "correct": true
+        },
+        {
+          "text": "rm arquivo"
+        },
+        {
+          "text": "mv arquivo"
+        },
+        {
+          "text": "cp arquivo"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Quero adicionar texto em um arquivo de texto existente, qual comando permite fazer isso?",
+      "image": null,
+      "level": null,
+      "categories": "",
+      "options": [
+        {
+          "text": "echo Texto Adicional >> meu_arquivo.txt",
+          "correct": true
+        },
+        {
+          "text": "echo Texto Adicional > meu_arquivo.txt"
+        },
+        {
+          "text": "echo < meu_arquivo.txt"
+        },
+        {
+          "text": "echo \"Texto Adicional\" meu_arquivo.txt"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "De acordo com a imagem, qual das alternativas é a correta para as informações desse arquivo?",
+      "image": "./data/q8.png",
+      "level": null,
+      "categories": "",
+      "options": [
+        {
+          "text": "É um arquivo, o dono do mesmo pode ler e escrever.",
+          "correct": true
+        },
+        {
+          "text": "É uma pasta, o grupo pode ler e escrever."
+        },
+        {
+          "text": "É uma pasta, está no diretorio home do usuário \"vega\""
+        },
+        {
+          "text": "É um arquivo vazio, esta protegido contra leitura de todos os usuários."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "De acordo com a imagem, qual comando é capaz de listar os arquivos e diretórios da pasta \"/\"?",
+      "image": "./data/q9.png",
+      "level": null,
+      "categories": "",
+      "options": [
+        {
+          "text": "ls ../..",
+          "correct": true
+        },
+        {
+          "text": "list /"
+        },
+        {
+          "text": "print /"
+        },
+        {
+          "text": "echo / | ls"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "Qual comando é capaz de listar os arquivos e diretorios da pasta \"/\"?",
+      "image": null,
+      "level": null,
+      "categories": "",
+      "options": [
+        {
+          "text": "ls /",
+          "correct": true
+        },
+        {
+          "text": "list /"
+        },
+        {
+          "text": "print /"
+        },
+        {
+          "text": "echo / | ls"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "question": "De acordo com a imagem, o que esses dois comandos fizeram?",
+      "image": "./data/q11.png",
+      "level": null,
+      "categories": "",
+      "options": [
+        {
+          "text": "Foi criado uma pasta com o nome de \"Pasta\", depois, foi criada outra pasta com o nome de \"Pasta\", dentro da pasta \"Pasta\" criada anteriormente.",
+          "correct": true
+        },
+        {
+          "text": "Foram criadas duas pastas, uma com o nome de \"Pasta\" e outra com o nome de \"Pasta/Pasta\".",
+          "info_text": "/ é um separador de caminhos, ao usar o mkdir Pasta/Pasta, será informado pra linha de comando, que é pra criar uma pasta com o nome de \"Pasta\" dentro da pasta \"Pasta\"."
+        },
+        {
+          "text": "Foram criados dois arquivos vazios."
+        },
+        {
+          "text": "O comando não faz nada, os caminhos não foram \"escapados\"."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "question": "De acordo com a imagem, foi criado um arquivo com o nome de \"Exemplo\" na pasta home do usuário, depois, é utilizado o comando \"cd\" para entrar na pasta \"Teste\", qual comando é capaz de mover o arquivo \"Exemplo\" para a pasta atual?",
+      "image": "./data/q12.png",
+      "level": null,
+      "categories": "",
+      "options": [
+        {
+          "text": "mv ../Exemplo ./Exemplo",
+          "info_text": "Se você quer manter o nome do arquivo original, você pode apenas especificar o diretorio, ou seja, o comando \"mv ../Exemplo .\", tem o mesmo efeito pratico de \"mv ../Exemplo ./Exemplo\", além disso, como a sessão atual já está na pasta que queremos mover o arquivo, também podemos utilizar \"mv ../Exemplo Exemplo\"",
+          "correct": true
+        },
+        {
+          "text": "mv ~/Teste ../Exemplo",
+          "info_text": "Nesse comando, é informado para mover a pasta \"/home/vega/Teste\" para o diretorio \"/home/vega/Exemplo\", o que resulta em erro, primeiro porque é uma tentativa de mover o diretorio atual dessa instancia do Terminal, o que pode gerar erros, segundo que, o caminho \"/home/vega/Exemplo\" já é populado por um arquivo, o que também, resulta em erro."
+        },
+        {
+          "text": "cat ~/Teste Exemplo",
+          "info_text": "Abordagem interessante e totalmente funcional, mas não é uma operação de mover, e sim, uma copia, só que feita com o cat."
+        },
+        {
+          "text": "cp ../Teste Exemplo",
+          "info_text": "Foi uma operação de copia, queremos mover."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "question": "De acordo com a imagem, após os diversos comandos utilizados, quais conteudos estão dentro do arquivo \"BomDia.txt\"?",
+      "image": "./data/q13.png",
+      "level": null,
+      "categories": "",
+      "options": [
+        {
+          "text": "Está vazio!",
+          "correct": true
+        },
+        {
+          "text": "\"VSCode né\""
+        },
+        {
+          "text": "\"oi\",\"td bem?\",\"vim ou emacs?\",\"VSCode né\""
+        },
+        {
+          "text": "cat \"BomDia.txt\"",
+          "info_text": "Esse comando pode ser utilizado para visualizar os conteudos do arquivo, mas esse não é o objetivo da pergunta."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "question": "De acordo com a imagem, foi feito um script, porem, ao tentar rodar ele, dá erro de \"Permission Denied\", como esse problema pode ser corrigido?",
+      "image": "./data/q14.png",
+      "level": null,
+      "categories": "",
+      "options": [
+        {
+          "text": "Está faltando as permissões de execução para o dono do arquivo, elas podem ser concedidas com \"chmod u+x\".",
+          "correct": true
+        },
+        {
+          "text": "Está faltando as permissões de execução, elas podem ser concedidas com \"chmod o+x\"."
+        },
+        {
+          "text": "O script está sem shebang (#!/bin/bash)."
+        },
+        {
+          "text": "O usuário atual não é dono do arquivo."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "question": "Sou dono de um arquivo, e tenho permissão de leitura e escrita para o mesmo, só não tenho a permissão de execução, qual opção condiz com o informado?",
+      "image": null,
+      "level": null,
+      "categories": "",
+      "options": [
+        {
+          "text": "-rw-r--r--",
+          "correct": true
+        },
+        {
+          "text": "drw-r--r--",
+          "info_text": "Quando começa com \"d\", é um diretorio, não é um arquivo"
+        },
+        {
+          "text": "-rwxrwxrwx",
+          "info_text": "Nessa opção, o dono tem permissão de execução (-rw[x]rwxrwx), de acordo com o enunciado, ele não deveria ter."
+        },
+        {
+          "text": "-rwxrw-rw-",
+          "info_text": "Nessa opção, o dono tem permissão de execução (-rw[x]rw-rw-), de acordo com o enunciado, ele não deveria ter."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "question": "Preciso copiar um arquivo presente minha pasta home, chamado de \"foo\", preciso copiar ele para a mesma pasta, a copia deverá ter o nome de \"bar\".",
+      "image": null,
+      "level": null,
+      "categories": "",
+      "options": [
+        {
+          "text": "cp ~/foo ~/bar",
+          "correct": true
+        },
+        {
+          "text": "copy -r ~/foo ~/bar"
+        },
+        {
+          "text": "~/foo > ~/bar"
+        },
+        {
+          "text": "xcopy ~/foo ~/bar"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "question": "Fui atualizar os repositorios com o apt update, mas tive um erro de permissões (como é mostrado na mensagem), porque isso acontece? e como corrigir?",
+      "image": "./data/q17.png",
+      "level": null,
+      "categories": "",
+      "options": [
+        {
+          "text": "O erro acontece, porque por padrão, a maioria das operações com o \"apt\" precisam de privilegios de root, isso pode ser corrigido rodando o apt como root, dá pra fazer isso de diversas formas, logando no usuário root, ou utilizando comandos, como o \"su\" ou \"sudo\" e diversas outras abordagens.",
+          "correct": true
+        },
+        {
+          "text": "A distribuição não tráz o apt como gerenciador de pacotes, deve utilizar outro gerenciador."
+        },
+        {
+          "text": "O sistema operacional está corrompido, é possível ver isso nas mensagens, erro ao acessar arquivos de trava e remoção ficheiros, uma instalação limpa do sistema operacional é recomendada."
+        },
+        {
+          "text": "O comando é invalido."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "question": "Estou com dois arquivos e duas pastas (como é mostrado na imagem), como posso deletar todos os quatro itens?",
+      "image": "./data/q18.png",
+      "level": null,
+      "categories": "",
+      "options": [
+        {
+          "text": "Estando na pasta \"~/Teste\", um simples \"rm -r *\" é o suficiente para remover os quatro itens.",
+          "correct": true
+        },
+        {
+          "text": "rm -r Arquivo Arquivo2 Pasta Pasta2",
+          "correct": true
+        },
+        {
+          "text": "del Arquivo Arquivo2 Pasta Pasta2"
+        },
+        {
+          "text": "rm Arquivo Arquivo2 Pasta Pasta2",
+          "info_text": "sem o \"-r\" não é possível deletar diretorios, nesse comando, apenas \"Arquivo\" e \"Arquivo2\" seriam deletados."
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "question": "Preciso mover todos os arquivos que começam com o nome \"Som\" e finalizam com \".mp3\", para a pasta \"MP3s\", qual comando é capaz de fazer isso?",
+      "image": "./data/q19.png",
+      "level": null,
+      "categories": "",
+      "options": [
+        {
+          "text": "mv Som*.mp3 MP3s",
+          "correct": true
+        },
+        {
+          "text": "mv *.mp3 MP3s",
+          "info_text": "Esse comando seleciona um arquivo que não começa com \"Som\", no caso, o \"Ringtone.mp3\"."
+        },
+        {
+          "text": "mv * MP3s"
+        },
+        {
+          "text": "mv Som* MP3s",
+          "info_text": "Esse comando seleciona um arquivo que não finaliza com \".mp3\", no caso, o \"Som.flac\"."
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "question": "Tenho um arquivo de texto chamado de \"Lista.txt\", preciso saber se dentro dessa lista, existe alguma linha contendo o texto \"Abacaxi\", selecione algum dos comaandos que são capazes de fazer isso",
+      "image": null,
+      "level": null,
+      "categories": "",
+      "options": [
+        {
+          "text": "cat Lista.txt | grep Abacaxi",
+          "correct": true
+        },
+        {
+          "text": "grep Abacaxi Lista.txt",
+          "correct": true
+        },
+        {
+          "text": "Lista.txt > Abacaxi"
+        },
+        {
+          "text": "whoami Lista.txt Abacaxi"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "question": "O que faz o simbolo \"|\", e como esse simbolo é conhecido?",
+      "image": null,
+      "level": null,
+      "categories": "",
+      "options": [
+        {
+          "text": "| também conhecido como \"pipe\" redireciona a saída de um comando para a entrada de outro.",
+          "correct": true
+        },
+        {
+          "text": "| também conhecido como \"pipe\" serve para copiar os conteudos de um arquivo para outro."
+        },
+        {
+          "text": "| também conhecido como \"pipa\" é um simbolo especial."
+        },
+        {
+          "text": "Dois \"pipes\" ou \"||\" redireciona a saída de um comando para a entrada de outro."
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "question": "Na maior parte das vezes, qual é a combinação de teclas utilizada para cancelar alguma operação sendo executada no momento?",
+      "image": null,
+      "level": null,
+      "categories": "",
+      "options": [
+        {
+          "text": "CTRL + C",
+          "correct": true
+        },
+        {
+          "text": "CTRL + SHIFT + C"
+        },
+        {
+          "text": "CTRL + X"
+        },
+        {
+          "text": "CTRL + W"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "question": "Na maior parte das vezes, qual a combinação de teclas para encerrar uma instancia da linha de comando?",
+      "image": null,
+      "level": null,
+      "categories": "",
+      "options": [
+        {
+          "text": "CTRL + D",
+          "correct": true
+        },
+        {
+          "text": "CTRL + SHIFT + Q"
+        },
+        {
+          "text": "CTRL + C"
+        },
+        {
+          "text": "CTRL + W"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "question": "Qual é a combinação de teclas utilizada para copiar texto no terminal?",
+      "image": null,
+      "level": null,
+      "categories": "",
+      "options": [
+        {
+          "text": "CTRL + SHIFT + C",
+          "correct": true
+        },
+        {
+          "text": "CTRL + X"
+        },
+        {
+          "text": "CTRL + C"
+        },
+        {
+          "text": "ALT + C"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "question": "Qual é a combinação de teclas utilizada para colar texto do terminal?",
+      "image": null,
+      "level": null,
+      "categories": "",
+      "options": [
+        {
+          "text": "CTRL + SHIFT + V",
+          "correct": true
+        },
+        {
+          "text": "CTRL + V"
+        },
+        {
+          "text": "CTRL + E"
+        },
+        {
+          "text": "ALT + V"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "question": "O que o comando mostrado na imagem faz?",
+      "image": "./data/q26.png",
+      "level": null,
+      "categories": "",
+      "options": [
+        {
+          "text": "Le os conteudos do arquivo \"Lista.txt\", procura pelo texto \"Morango\", caso o texto for encontrado nos conteudos, será mostrado na tela, o resultado encontrado, e o texto \"Morango encontrado\", caso o texto não for encontrado, ou ocorrer algum erro, será mostrado na tela \"Morango não encontrado\".",
+          "correct": true
+        },
+        {
+          "text": "O comando não funciona."
+        },
+        {
+          "text": "Le os conteudos do arquivo \"Lista.txt\", procura pelo texto \"Morango\", caso o texto for encontrado nos conteudos, apenas será mostrado \"Morango encontrado\" na tela."
+        },
+        {
+          "text": "O comando manda os conteudos do arquivo \"Lista.txt\" para o arquivo \"Morango\", caso o comando rodar com sucesso, será mostrado na tela \"Morango encontrado\", caso contrário, será mostrado \"Morango não encontrado\""
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "question": "Preciso editar um arquivo de texto pela linha de comando, o arquivo está em ~/Notas.txt, selecione um comando que é capaz de fazer isso",
+      "image": null,
+      "level": null,
+      "categories": "",
+      "options": [
+        {
+          "text": "Caso tenha o nano instalado, pode utilizar \"nano ~/Notas.txt\"",
+          "correct": true
+        },
+        {
+          "text": "Usando o modo editor do cat \"cat --editor ~/Notas.txt\""
+        },
+        {
+          "text": "Rodando diretamente \"~/Notas.txt\""
+        },
+        {
+          "text": "man \"~/Notas.txt\""
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "question": "Preciso saber mais informações sobre algum comando ou programa da linha de comando, selecione uma abordagem que pode ser utilizada para obter maiores informações pela própria linha de comando.",
+      "image": null,
+      "level": null,
+      "categories": "",
+      "options": [
+        {
+          "text": "Caso o man esteja instalado, dependendo do comando, é possível acessar o manual, usando o \"man comando\", por exemplo, para verificar o manual do comando mkdir, podemos utilizar \"man mkdir\".",
+          "correct": true
+        },
+        {
+          "text": "Muitos comandos suportam o argumento \"--help\", por exemplo, pra visualizar o menu de ajuda do comando mkdir, podemos utilizar \"mkdir --help\"",
+          "correct": true
+        },
+        {
+          "text": "Dependendo do comando, é possível acessar o manual, usando o \"manual comando\", por exemplo, para verificar o manual do comando mkdir, podemos utilizar \"manual mkdir\"."
+        },
+        {
+          "text": "Escreva o comando, acompanhado pelo \"|| ajuda\", por exemplo, caso queira ver maiores informações sobre o comando \"mkdir\", podemos utilizar o comando \"mkdir || ajuda\""
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "question": "Qual comando pode ser utilizado para reiniciar a maquina pela linha de comando?",
+      "image": null,
+      "level": null,
+      "categories": "",
+      "options": [
+        {
+          "text": "reboot",
+          "correct": true
+        },
+        {
+          "text": "boot --reboot"
+        },
+        {
+          "text": "system reboot"
+        },
+        {
+          "text": "os-reboot"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "question": "Qual comando pode ser utilizado para desligar a maquina pela linha de comando?",
+      "image": null,
+      "level": null,
+      "categories": "",
+      "options": [
+        {
+          "text": "poweroff",
+          "correct": true
+        },
+        {
+          "text": "boot --shutdown"
+        },
+        {
+          "text": "system shutdown"
+        },
+        {
+          "text": "os-shutdown"
+        }
+      ]
+    }
+  ]
+}

@@ -1,1 +1,48 @@
-Hello World
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta 
+      charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="homeScreen">
+      <h1>Questionário</h1>
+      <p>Questionário sobre o essencial da linha de comando.
+        <br>Um complementar do vídeo <a href="fixme">Essencial sobre a linha de comando</a>
+      </p>
+      <br>
+      <button class="btn" id="btnStart" onclick="onClickStart(this)">Iniciar</button>
+      <br>
+      <br>
+      <p class="footer">Este é um projeto de código aberto!
+        <br>Acesse o <a href="fixme">repositório público</a> para ver o código ou contribuir.
+        <br>Encontrou um erro ou bug? <a href="fixme">Reporte aqui</a>.
+      </p>
+    </div>
+
+    <div class="hidden" id="quizScreen">
+      <h1 id="quizTitle"></h1>
+      <p id="quizQuestion"></p>
+      <img class="hidden" id="quizImage"></img>
+      <div class="options">
+        <div id="optionA" class="option" onclick="onClickOption(this, 'a')"></div>
+        <div id="optionB" class="option" onclick="onClickOption(this, 'b')"></div>
+        <div id="optionC" class="option" onclick="onClickOption(this, 'c')"></div>
+        <div id="optionD" class="option" onclick="onClickOption(this, 'd')"></div>
+      </div>
+      <p id="quizResult"></p>
+      <button id="btnCheckAnswer" class="btn container hidden" onclick="onSubmitQuestion(this)">Verificar resposta</button>
+      <button id="btnNextQuestion" class="btn container hidden" onclick="onClickNextQuestion(this)">Avançar</button>
+    </div>
+
+    <div class="hidden" id="resultScreen">
+      <h1 id="resultTitle"></h1>
+      <p id="resultDesc"></p>
+      <button id="btnReset" class="btn container" onclick="onClickReset(this)">Reiniciar teste</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
